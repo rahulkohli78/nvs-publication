@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth and Resilience Are Not the Same Thing — Rahul Kohli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F7F5F1;--paper:#FCFBF8;--ink:#2E3A35;--body:#404540;--muted:#6D756F;
+  --rule:#DAD7D1;--accent:#4F6F7A;--accent-dark:#36525B;--accent-soft:#DCE6E8;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#1C1E1D;--paper:#242726;--ink:#E8EDE9;--body:#C8CFC9;--muted:#8A9490;
+    --rule:#3A3F3C;--accent:#6F919C;--accent-dark:#9CB9C2;--accent-soft:#2E3E43;
+  }
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',Arial,Helvetica,sans-serif;background:var(--bg);color:var(--body);line-height:1.64;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.page{width:min(100% - 36px,1080px);margin:0 auto;padding:44px 0 72px}
+.masthead,.section,.footer{display:grid;grid-template-columns:150px minmax(0,1fr);gap:36px}
+.masthead{padding:20px 0 54px}
+.kicker,.section-label{font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--accent-dark);padding-top:5px}
+.hero h1{color:var(--ink);max-width:760px;font-size:clamp(38px,5.2vw,62px);line-height:1.03;letter-spacing:-.045em;font-weight:500;margin-bottom:18px}
+.deck{max-width:720px;font-size:17px;line-height:1.5;color:var(--muted)}
+.section{padding:52px 0;border-top:1px solid var(--rule)}
+.content{max-width:820px}
+.reading{max-width:700px}
+.reading p,.content p{font-size:16.5px;margin-bottom:17px;line-height:1.64}
+.transition{margin-top:34px;padding-top:26px;border-top:1px solid var(--rule);max-width:760px;font-size:clamp(24px,3.1vw,34px);line-height:1.2;letter-spacing:-.028em;color:var(--ink);font-weight:500}
+.transition strong{color:var(--accent-dark);font-weight:500}
+.finding-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:start;margin-bottom:30px}
+.figure{font-size:clamp(76px,11vw,132px);line-height:.84;letter-spacing:-.065em;font-weight:500;color:var(--accent);margin-bottom:22px;font-feature-settings:'tnum'}
+.figure-copy{font-size:20px;line-height:1.48;max-width:580px;color:var(--ink)}
+.boundary{border-left:1px solid var(--rule);padding-left:24px;margin-top:10px}
+.boundary h3{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent-dark);margin-bottom:7px;font-weight:700}
+.boundary p{font-size:15.5px;color:var(--muted);margin-bottom:17px}
+.insight-list{margin-top:30px;border-top:1px solid var(--rule)}
+.insight-row{display:grid;grid-template-columns:130px 1fr;gap:26px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.insight-row .label{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent-dark);padding-top:4px}
+.insight-row h4{color:var(--ink);font-size:18px;line-height:1.36;margin-bottom:8px;font-weight:500;letter-spacing:-.022em}
+.insight-row p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}
+.pullquote{color:var(--ink);max-width:740px;margin-top:32px;padding-left:20px;border-left:3px solid var(--accent);font-size:23px;line-height:1.36;letter-spacing:-.022em;font-weight:500}
+.tool-intro{max-width:700px;margin-bottom:20px}
+.tool-caption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.tool-caption strong{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent-dark);font-weight:700}
+.tool-caption a{font-size:12.5px;text-decoration:none;color:var(--accent-dark);font-weight:500}
+.tool-caption a:hover{text-decoration:underline}
+iframe{width:100%;height:820px;border:0;background:var(--paper);display:block}
+.nt-note{max-width:740px;margin-top:20px;padding-top:16px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px;line-height:1.65}
+.framework{border-top:1px solid var(--rule);margin-top:14px}
+details{border-bottom:1px solid var(--rule)}
+details .detail{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1);
+}
+details[open] .detail{max-height:600px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  details .detail{transition:none}
+  .sum-title{transition:none}
+}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:46px 1fr auto;gap:16px;align-items:center;padding:18px 0;user-select:none}
+summary::-webkit-details-marker{display:none}
+summary:hover .sum-title{color:var(--accent)}
+summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.num{font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--accent-dark)}
+.sum-title{font-size:16.5px;font-weight:500;color:var(--ink);transition:color .15s}
+.sum-sub{display:block;margin-top:3px;font-size:13.5px;line-height:1.35;color:var(--muted);font-weight:400}
+.toggle-icon{font-size:20px;font-weight:400;color:var(--accent-dark);width:20px;text-align:center;line-height:1}
+.toggle-icon::before{content:"+"}
+details[open] .toggle-icon::before{content:"−"}
+.detail{max-width:700px;padding:0 0 22px 62px;color:var(--body);font-size:15px}
+.detail h5{margin:14px 0 6px;color:var(--accent-dark);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.detail p{margin-bottom:12px;color:var(--muted);line-height:1.65}
+.method-note{max-width:740px;margin-top:18px;padding-top:0;border-top:0;color:var(--muted);font-size:13.5px;line-height:1.65}
+.boundary-statement{color:var(--ink);max-width:800px;padding-top:22px;border-top:3px solid var(--accent);font-size:clamp(26px,3.4vw,38px);line-height:1.16;letter-spacing:-.03em;margin-bottom:26px;font-weight:500}
+.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:26px}
+.support-grid h4{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent-dark);margin-bottom:9px;font-weight:700}
+.support-grid ul{list-style:none;border-top:1px solid var(--rule)}
+.support-grid li{padding:11px 0;border-bottom:1px solid var(--rule);color:var(--muted);font-size:14px;line-height:1.55}
+.close{max-width:720px}
+.close p{font-size:17px;margin-bottom:17px;line-height:1.64}
+.next-question{margin-top:26px;padding:18px 0 0 20px;border-left:3px solid var(--accent);color:var(--ink);font-size:22px;line-height:1.36;letter-spacing:-.02em;font-weight:500}
+.footer{padding-top:20px;margin-top:8px;border-top:1px solid var(--rule);color:var(--muted);font-size:11.5px;line-height:1.75}
+.footer a{color:var(--accent-dark);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.footer-contact{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin:0;
+}
+.footer-contact .sep{color:var(--muted)}
+.footer-contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+}
+.footer-contact-link svg{
+  width:14px;
+  height:14px;
+  fill:currentColor;
+  flex:0 0 auto;
+}
+
+@media(min-width:801px) and (max-width:1024px){
+  .page{width:min(100% - 48px,980px)}
+  .masthead,.section,.footer{grid-template-columns:132px minmax(0,1fr);gap:28px}
+  .hero h1{font-size:clamp(42px,5.7vw,56px)}
+  .figure{font-size:clamp(78px,10vw,112px)}
+  iframe{height:780px}
+}
+
+@media(max-width:800px){
+  .masthead,.section,.footer{grid-template-columns:1fr;gap:16px}
+  .kicker,.section-label{padding-top:0}
+  .finding-grid{grid-template-columns:1fr;gap:24px}
+  .boundary{border-left:none;border-top:1px solid var(--rule);padding:18px 0 0}
+  .insight-row{grid-template-columns:1fr;gap:7px}
+  .support-grid{grid-template-columns:1fr}
+  iframe{height:740px}
+}
+@media(max-width:560px){
+  .page{width:min(100% - 24px,1080px);padding-top:18px}
+  .masthead{padding:10px 0 38px}
+  .section{padding:40px 0}
+  .hero h1{font-size:39px;line-height:1.05}
+  .deck{font-size:16px}
+  .reading p,.content p{font-size:16px}
+  .figure{font-size:84px}
+  .transition{font-size:26px}
+  .pullquote,.next-question{font-size:20px}
+  summary{grid-template-columns:38px 1fr auto;gap:9px}
+  .detail{padding-left:47px}
+  iframe{height:660px}
+}
+
+/* Version 1.1 editorial comparison layer */
+.quick-access{
+  margin-top:22px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--accent-dark);
+  font-size:13px;
+  font-weight:500;
+  text-decoration:none;
+  border-bottom:1px solid rgba(79,111,122,.45);
+  padding-bottom:4px;
+}
+.quick-access:hover{color:var(--accent);border-color:var(--accent)}
+.editorial-support{
+  max-width:700px;
+  margin:0 0 22px;
+  color:var(--muted);
+  font-size:15.5px;
+  line-height:1.62;
+}
+.editorial-standfirst{
+  max-width:700px;
+  margin:0 0 16px;
+  color:var(--body);
+  font-size:17px;
+  line-height:1.5;
+  font-weight:400;
+  letter-spacing:-.008em;
+}
+.section{padding:66px 0}
+.transition{
+  margin-top:54px;
+  padding:42px 0 10px;
+  border-top:1px solid var(--rule);
+  border-bottom:0;
+  max-width:800px;
+}
+.pullquote{
+  margin-top:54px;
+  margin-bottom:8px;
+  padding:18px 0 18px 24px;
+  font-size:clamp(24px,2.7vw,31px);
+  line-height:1.3;
+}
+.boundary-statement{
+  margin-top:12px;
+  margin-bottom:36px;
+  padding-top:30px;
+}
+.methodology-update{
+  max-width:700px;
+  margin-top:22px;
+  padding-top:0;
+  border-top:0;
+  color:var(--body);
+  font-size:15.5px;
+  line-height:1.64;
+}
+.closing-pause{
+  max-width:720px;
+  margin:54px 0 8px;
+  padding:34px 0 8px;
+  border-top:1px solid var(--rule);
+  color:var(--ink);
+  font-size:clamp(22px,2.5vw,29px);
+  line-height:1.32;
+  letter-spacing:-.025em;
+  font-weight:500;
+}
+@media(max-width:800px){
+  .section{padding:52px 0}
+}
+@media(max-width:560px){
+  .section{padding:46px 0}
+  .editorial-standfirst{font-size:16px}
+  .transition{margin-top:42px;padding-top:32px}
+}
+
+
+.closing-silence{
+  display:grid;
+  grid-template-columns:150px minmax(0,1fr);
+  gap:36px;
+  margin:18px 0 54px;
+}
+.closing-silence > span{
+  grid-column:2;
+  max-width:820px;
+  padding:22px 0 0;
+  color:var(--ink);
+  font-size:clamp(24px,2.8vw,32px);
+  line-height:1.28;
+  letter-spacing:-.026em;
+  font-weight:500;
+}
+@media(min-width:801px) and (max-width:1024px){
+  .closing-silence{
+    grid-template-columns:132px minmax(0,1fr);
+    gap:28px;
+  }
+}
+@media(max-width:800px){
+  .closing-silence{
+    display:block;
+    margin:4px 0 42px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="kicker">Visitor Economy Analysis</div>
+    <div class="hero">
+      <h1>Visitor Portfolio<br>Risk Diagnostic</h1>
+      <p class="deck">Growth and resilience are not the same thing.</p>
+      <a class="quick-access" href="https://rahulkohli78.github.io/nvs-tools/" target="_blank" rel="noopener">Launch interactive diagnostic →</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The reframe</div>
+    <div class="content">
+      <div class="reading">
+        <p>Destinations routinely measure visitor arrivals, total expenditure and year-on-year growth. Those measures describe how demand has changed. They reveal much less about what that demand depends on.</p>
+        <p>Two destinations can grow at the same rate while becoming structurally very different. One may be building a balanced visitor portfolio. The other may be becoming more dependent on a narrow source of demand.</p>
+        <p>That distinction is the starting point for this diagnostic.</p>
+      </div>
+      <div class="transition">
+        Growth tells you whether demand increased.<br>
+        <strong>Portfolio structure tells you what that growth depends on.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The central finding</div>
+    <div class="content">
+      <div class="finding-grid">
+        <div>
+          <div class="figure">$3.2B</div>
+          <div class="figure-copy">of domestic visitor expenditure sits in visitor purposes that are underrepresented relative to comparable destination types.</div>
+        </div>
+        <div class="boundary">
+          <h3>What the number means</h3>
+          <p>A measure of portfolio imbalance under the benchmark assumptions.</p>
+          <h3>What it does not mean</h3>
+          <p>A forecast, a recoverable revenue estimate or a prediction of future demand.</p>
+        </div>
+      </div>
+      <div class="reading">
+        <p>The estimate compares each state's visitor-purpose mix with structurally similar destinations while holding total visitor expenditure constant.</p>
+        <p>It asks what the current portfolio would look like if each state's mix matched the benchmark for its destination type. It does not assume more visitors, higher yield or future growth.</p>
+      </div>
+      <div class="insight-list">
+        <div class="insight-row">
+          <div class="label">Insight 01</div>
+          <div>
+            <h4>High yield can coexist with an underweight share.</h4>
+            <p>A segment may perform strongly when visitors arrive and still contribute less to the portfolio than comparable destinations achieve. The strategic question is therefore not only how much each visitor spends, but how much of the portfolio that segment carries.</p>
+          </div>
+        </div>
+        <div class="insight-row">
+          <div class="label">Insight 02</div>
+          <div>
+            <h4>Strength in one segment can conceal exposure elsewhere.</h4>
+            <p>A high-performing purpose does not automatically create a balanced visitor economy. Tasmania's Holiday strength and Western Australia's Business strength illustrate why segment performance and portfolio resilience must be assessed separately.</p>
+          </div>
+        </div>
+        <div class="insight-row">
+          <div class="label">Insight 03</div>
+          <div>
+            <h4>Similar topline growth can rest on very different demand structures.</h4>
+            <p>Two destinations can report comparable growth while carrying different levels of concentration, diversification and exposure. The same headline outcome can therefore imply very different strategic priorities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pullquote">The value of the model is not that it reports another number. It reveals the structure that standard growth measures leave hidden.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The evidence</div>
+    <div class="content">
+      <p class="editorial-standfirst">The finding becomes useful only when the reader can test it.</p>
+      <div class="tool-intro">
+        <p>The interactive diagnostic allows each state-purpose combination to be tested against its relevant peer benchmark.</p>
+        <p>Select a state and a visitor purpose to examine portfolio share, relative position, yield and the next question the pattern raises.</p>
+      </div>
+      <div class="tool-caption">
+        <strong>Explore the diagnostic</strong>
+        <a href="https://rahulkohli78.github.io/nvs-tools/" target="_blank" rel="noopener">Open separately ↗</a>
+      </div>
+      <iframe src="https://rahulkohli78.github.io/nvs-tools/" title="Visitor Portfolio Risk Diagnostic" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="nt-note">The Northern Territory is handled separately. As the sole Remote destination in the dataset, it has no peer group against which to benchmark concentration. Its result is therefore interpreted as a yield, access and market-reach question rather than a concentration finding.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Behind the diagnostic</div>
+    <div class="content">
+      <p class="editorial-standfirst">Four analytical choices shape how the benchmark should be interpreted.</p>
+      <p class="editorial-support">Each choice improves the relevance of the comparison, while also defining the limits of what the result can support.</p>
+      <div class="framework">
+        <details>
+          <summary>
+            <span class="num">01</span>
+            <span class="sum-title">Why compare against comparable destinations?<span class="sum-sub">Why a national average is the wrong benchmark.</span></span>
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="detail">
+            <h5>The question</h5>
+            <p>Would a national comparison answer the same question?</p>
+            <h5>The analytical decision</h5>
+            <p>No. Visitor-purpose mix reflects structural characteristics as well as performance. Comparing Queensland with New South Wales blends fundamentally different destination economies. The diagnostic therefore compares each state with destinations facing broadly similar demand conditions.</p>
+            <h5>Why it matters</h5>
+            <p>A benchmark is only useful if it represents a realistic comparison. Peer groups reduce the risk of treating structural difference as underperformance.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="num">02</span>
+            <span class="sum-title">Why measure expenditure rather than visitor numbers?<span class="sum-sub">Why economic contribution matters more than arrivals alone.</span></span>
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="detail">
+            <h5>The question</h5>
+            <p>If visitor numbers are increasing, is that enough?</p>
+            <h5>The analytical decision</h5>
+            <p>Not necessarily. Visitor numbers measure activity. Expenditure measures economic contribution. The diagnostic therefore compares how much each visitor purpose contributes to the visitor economy, not simply how many visitors arrive.</p>
+            <h5>Why it matters</h5>
+            <p>Growth in arrivals does not necessarily translate into a stronger or more resilient visitor portfolio.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="num">03</span>
+            <span class="sum-title">Why use expenditure-weighted benchmarks?<span class="sum-sub">Why larger peer economies carry proportionate influence.</span></span>
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="detail">
+            <h5>The question</h5>
+            <p>Why not average every peer destination equally?</p>
+            <h5>The analytical decision</h5>
+            <p>Destination economies differ substantially in scale. Weighting each peer by total visitor expenditure produces a benchmark that reflects the relative economic significance of each destination within its group.</p>
+            <h5>Why it matters</h5>
+            <p>A benchmark should reflect the market being represented, rather than treat every destination as though it contributes equally.</p>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="num">04</span>
+            <span class="sum-title">When is a difference meaningful?<span class="sum-sub">Why small deviations are treated as broadly aligned.</span></span>
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="detail">
+            <h5>The question</h5>
+            <p>Does every observed difference deserve attention?</p>
+            <h5>The analytical decision</h5>
+            <p>No. Differences within ±0.5 percentage points are treated as broadly at benchmark. This reduces the likelihood that minor variation, rounding or annual movement is interpreted as structural imbalance.</p>
+            <h5>Why it matters</h5>
+            <p>The diagnostic is designed to identify differences that are more likely to matter strategically, not to amplify every small deviation.</p>
+          </div>
+        </details>
+      </div>
+      <div class="method-note">The Northern Territory and the Australian Capital Territory are treated as explicit special cases. The Northern Territory has no peer group by construction. For the Australian Capital Territory, Other-purpose expenditure is not separately publishable in the 2024 dataset, so no benchmark finding is reported.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Decision boundaries</div>
+    <div class="content">
+      <div class="boundary-statement">The diagnostic identifies where structural differences exist. It does not establish why they exist.</div>
+      <div class="reading">
+        <p>A below-benchmark result does not mean a destination has failed to attract those visitors, or that a specific intervention would close the gap. It identifies where deeper investigation may create value.</p>
+      </div>
+      <div class="support-grid">
+        <div>
+          <h4>What this diagnostic can support</h4>
+          <ul>
+            <li>Identifying visitor purposes that warrant further investigation</li>
+            <li>Recognising where concentration may create exposure</li>
+            <li>Comparing portfolios with structurally similar destinations</li>
+            <li>Prioritising where deeper strategic analysis should begin</li>
+          </ul>
+        </div>
+        <div>
+          <h4>What this diagnostic cannot support</h4>
+          <ul>
+            <li>Explaining why a benchmark difference exists</li>
+            <li>Predicting future visitor demand</li>
+            <li>Estimating recoverable revenue</li>
+            <li>Recommending interventions without further analysis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="methodology-update">Tourism Research Australia introduced a revised National Visitor Survey methodology from 2025 onwards. How the diagnostic evolves under the new methodology remains an open analytical question.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The next analytical question</div>
+    <div class="content">
+      <p class="editorial-standfirst">Identifying the pattern is the beginning of the decision, not the end.</p>
+      <div class="close">
+        <p>Every destination has a different visitor portfolio. The question is what that portfolio reveals.</p>
+        <p>For some, the gap is concentrated in one purpose. For others, it spans several segments and points to a wider demand or enabling-system question. In other cases, the issue is not underrepresentation but the exposure created by concentration.</p>
+        <p>The same diagnostic question is relevant wherever demand is distributed across a portfolio of sources, including aviation, airports, infrastructure, major events and government prioritisation.</p>
+        <div class="closing-pause">This diagnostic establishes where the structural differences sit.</div>
+        <div class="next-question">The next question is why those differences emerge — and which changes would have the greatest commercial and strategic impact.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="closing-silence"><span>Growth can coexist with concentration. Portfolio structure makes that visible.</span></div>
+
+  <div class="footer">
+    <div></div>
+    <div>
+      <p>Source: Tourism Research Australia, National Visitor Survey, Year Ending December 2024. One year of data. Directional finding, not a definitive result.</p>
+      <br>
+      <p>This publication is provided for general informational and analytical purposes only. It should not be relied upon as the sole basis for commercial, investment, policy or operational decisions.</p>
+      <br>
+      <p class="footer-contact">
+        <span>Analysis, diagnostic framework and interactive tool: Rahul Kohli</span>
+        <span class="sep">·</span>
+        <a class="footer-contact-link" href="mailto:Rahul.Kohli@alum.mit.edu" aria-label="Email Rahul Kohli">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7 8-5H4l8 5Zm0 2.3L3 8.7V17h18V8.7l-9 5.6Z"/></svg>
+          <span>Email</span>
+        </a>
+        <span class="sep">·</span>
+        <a class="footer-contact-link" href="https://www.linkedin.com/in/raulkohli" target="_blank" rel="noopener" aria-label="Rahul Kohli on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5A2.2 2.2 0 1 1 5.2 8a2.2 2.2 0 0 1 0-4.5ZM3.3 9.7h3.8V21H3.3V9.7Zm6.1 0H13v1.5h.1c.5-.9 1.8-1.9 3.8-1.9 4.1 0 4.8 2.7 4.8 6.2V21h-3.8v-5c0-1.2 0-2.8-1.8-2.8s-2 1.3-2 2.7V21H9.4V9.7Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <span class="sep">·</span>
+        <a class="footer-contact-link" href="https://rahulkohli.carrd.co/" target="_blank" rel="noopener" aria-label="Rahul Kohli portfolio">
+          <span>Portfolio</span>
+        </a>
+      </p>
+      <br>
+      <p>© 2026 Rahul Kohli. All rights reserved in relation to the original analytical framework, written content, visual presentation and source code.</p>
+      <p>The underlying National Visitor Survey data is publicly available and remains the property of Tourism Research Australia. No ownership of the source data is claimed.</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
