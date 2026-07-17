@@ -6,7 +6,7 @@ A digital publication examining visitor portfolio structure, concentration and r
 
 https://rahulkohli78.github.io/nvs-publication/
 
-**Short link**  
+## Short link 
 
 https://rkohli.link/nvs-publication
 
