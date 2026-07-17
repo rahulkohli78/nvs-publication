@@ -12,7 +12,7 @@ https://rkohli.link/nvs-publication
 
 ## Interactive diagnostic
 
-https://rahulkohli78.github.io/nvs-tools/
+https://rkohli.link/nvs-tools
 
 ---
 
